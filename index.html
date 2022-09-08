@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-success text-center">Registration Form</h1>
+      <br />
+      <div class="col-lg-12 m-auto d-block">
+        <form
+          action="#"
+          onsubmit="return validation()"
+          class="p-3 mb-2 bg-light text-dark"
+        >
+        <div style="width:100%; display: flex; justify-content: space-between;" >
+          <div class="form-group" style="width:49%;">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              name="fname"
+              class="form-control"
+              id="fname"
+              autocomplete="off"
+            />
+            <span id="fnameerr" class="text-danger font-weight-bold"></span>
+          </div>
+
+          <div class="form-group" style="width:49%;">
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              name="lname"
+              class="form-control"
+              id="lname"
+              autocomplete="off"
+            />
+            <span id="lnameerr" class="text-danger font-weight-bold"></span>
+          </div>
+
+        </div>
+        <div style="width:100%; display: flex; justify-content: space-between;">
+          <div class="form-group" style="width:49%;">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="email"
+              autocomplete="off"
+            />
+            <span id="emailerr" class="text-danger font-weight-bold"></span>
+          </div>
+          <div class="form-group" style="width:49%;">
+            <label for="phno">Phone Number</label>
+            <input
+              type="text"
+              name="phno"
+              class="form-control"
+              id="phno"
+              autocomplete="off"
+            />
+            <span id="phnoerr" class="text-danger font-weight-bold"></span>
+          </div>
+        </div>
+        <div style="width:100%; display: flex; justify-content: space-between;">
+          <div class="form-group" style="width:49%;">
+            <label for="batchno">Batch number</label>
+            <select id="batchno" class="form-control" name="batchno" >
+              <option value="" disabled selected>Select batch no....</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <span id="batchnoid" class="text-danger font-weight-bold"></span>
+          </div>
+          <div class="form-group" style="width:49%;">
+            <label for="currmodule">Current Module</label>
+            <select id="currmodule" class="form-control" name="currmodule">
+              <option value="" disabled selected>
+                Select current module....
+              </option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+            <span id="moduleid" class="text-danger font-weight-bold"></span>
+          </div>
+          
+        </div>
+          
+          
+          <div class="form-group" style="display: flex; width: 100%">
+            <div style="width: 3%; margin-right: 10px;">
+              <input
+                type="checkbox"
+                name="agree"
+                class="form-control"
+                id="agree"
+                style="width: 100%; height: 100%"
+              />
+            </div>
+            <div style="display: flex; flex-direction: column;">
+            <label for="agree">Agree to term and conditions</label>
+            <span id="agreeid" class="text-danger font-weight-bold"></span>
+
+            </div>
+          </div>
+          <div style="width:100% ; display: flex; justify-content: center;">
+            <input
+            type="submit"
+            name="submit"
+            value="Submit"
+            class="btn btn-success"
+          />
+          
+          </div>
+
+          
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
